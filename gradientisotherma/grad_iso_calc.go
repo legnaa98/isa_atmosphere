@@ -1,8 +1,9 @@
-package compute_grad_iso
+package computegradiso
 
 import (
 	"math"
-	"isa_standard_atmosphere/props"
+
+	"isa_atmosphere/props"
 )
 
 func ComputeGrad(

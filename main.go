@@ -1,21 +1,21 @@
 package main
 
 import (
-	"fmt"
 	"os"
-	"isa_standard_atmosphere/props"
-	"isa_standard_atmosphere/gradient_isotherma"
+	"fmt"
 	"strconv"
+
+	"isa_atmosphere/props"
+	"isa_atmosphere/gradientisotherma"
 )
 
 func main() {
+	a1, a2, a3, a4 := constants.GetGradients()
 	t1, t2, t3 := constants.GetIsothermalTemperatures()
-	hIso11, hIso12, hIso21,
-	hIso22, hIso31, hIso32, hTop := constants.GetIsothermaHeightIntervals()
 	temperatureSeaLevel,
 	pressureSeaLevel, densitySeaLevel := constants.GetSeaLevelProperties()
-	a1, a2, a3, a4 := constants.GetGradients()
-
+	hIso11, hIso12, hIso21,
+	hIso22, hIso31, hIso32, hTop := constants.GetIsothermaHeightIntervals()
 
 	// bottom of 1 isotherma data
 	_, pressureIso11, densityIso11 := compute_grad_iso.ComputeGrad(

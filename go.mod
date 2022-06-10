@@ -1,3 +1,3 @@
-module isa_standard_atmosphere
+module isa_atmosphere
 
 go 1.18
