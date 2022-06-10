@@ -1,3 +1,4 @@
+// Package constants initialized various constants necessary to compute air properties.
 package constants
 
 func GetGravityAndGasConstants() (float64, float64){

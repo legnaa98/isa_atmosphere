@@ -1,3 +1,5 @@
+// Package computegradiso implements helper functions to compute gradient and isotherma sections
+// for the isa standard atmosphere with respect to a given altitude.
 package computegradiso
 
 import (
